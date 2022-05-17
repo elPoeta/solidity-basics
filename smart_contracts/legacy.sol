@@ -37,7 +37,7 @@ contract Legacy {
         }
     }
 
-    function deceased() public onlyOwner {
+    function deceased() public payable onlyOwner {
         isDeceased = true;
         payout();
     }
