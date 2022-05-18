@@ -6,7 +6,7 @@ contract Legacy {
     uint256 fortune;
     bool isDeceased;
 
-    constructor() public payable {
+    constructor() payable {
         owner = msg.sender; // msg sender -> address that is being called
         fortune = msg.value; // msg value -> tells us how much ether is being sent
         isDeceased = false;
